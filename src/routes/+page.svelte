@@ -2,6 +2,7 @@
   import ServerStatus from "$lib/components/ServerStatus.svelte";
   import HowToConnect from "$lib/components/HowToConnect.svelte";
   import DynmapSection from "$lib/components/DynmapSection.svelte";
+  import { base } from "$app/paths";
 
   const serverAddress = "mc.lekkerboys.co.za";
 
@@ -33,7 +34,7 @@
 >
   <div class="absolute inset-0">
     <img
-      src="/images/hero-bg.png"
+      src={`${base}/images/hero-bg.png`}
       alt="LEKKERBOYS Minecraft Landscape"
       class="w-full h-full object-cover object-center"
     />

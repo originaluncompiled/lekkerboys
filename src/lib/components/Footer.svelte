@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base } from "$app/paths";
+</script>
+
 <footer class="border-t border-white/8 mt-10 sm:mt-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
     <div class="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,0.9fr)] gap-8 sm:gap-10 justify-items-center md:justify-items-stretch text-center md:text-left">
@@ -5,7 +9,7 @@
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
           <img
-            src="/images/lekkerlogo.png"
+            src={`${base}/images/lekkerlogo.png`}
             alt="LEKKERBOYS logo"
             class="w-10 h-10 rounded-lg object-contain drop-shadow-[0_0_12px_rgba(92,180,60,0.3)]"
           />

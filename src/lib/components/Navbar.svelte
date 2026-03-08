@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from "$app/paths";
+
   let mobileOpen = $state(false);
 
   function toggleMobile() {
@@ -27,7 +29,7 @@
       <!-- Logo -->
       <a href="#home" class="flex items-center gap-3 group" onclick={closeMobile}>
         <img
-          src="/images/lekkerlogo.png"
+          src={`${base}/images/lekkerlogo.png`}
           alt="LEKKERBOYS logo"
           class="w-9 h-9 rounded-lg object-contain drop-shadow-[0_0_12px_rgba(92,180,60,0.3)] group-hover:drop-shadow-[0_0_20px_rgba(92,180,60,0.5)] transition-all duration-300"
         />
