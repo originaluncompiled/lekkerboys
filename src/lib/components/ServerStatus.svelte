@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
     interface ServerData {
         online: boolean;
         players: {
@@ -18,7 +20,10 @@
     async function fetchStatus() {
         try {
             const res = await fetch(
-                "https://api.mcsrvstat.us/3/mc.lekkerboys.co.za",
+                `https://api.mcsrvstat.us/3/mc.lekkerboys.co.za?t=${Date.now()}`,
+                {
+                    cache: "no-store",
+                },
             );
             if (!res.ok) throw new Error("Failed to fetch");
             const data: ServerData = await res.json();
@@ -32,7 +37,7 @@
     }
 
     // Fetch on mount and every 60s
-    $effect(() => {
+    onMount(() => {
         fetchStatus();
         const interval = setInterval(fetchStatus, 60000);
         return () => clearInterval(interval);
@@ -41,26 +46,26 @@
 
 <section id="status" class="section-padding max-w-7xl mx-auto">
     <!-- Section header -->
-    <div class="mb-10">
+    <div class="mb-8 sm:mb-10">
         <div class="pixel-label text-green-300 mb-3 flex items-center gap-2">
             <span class="inline-block w-2 h-2 bg-green-300 rotate-45"></span>
-            Server Status
+            Vanilla Status
         </div>
         <h2
-            class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4
+            class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4
                bg-gradient-to-br from-cream to-green-200 bg-clip-text text-transparent"
         >
-            Live Server
+            Live Vanilla Server
         </h2>
         <p class="text-lg text-cream-muted/80 max-w-xl">
-            Real-time status of the LEKKER SMP. See who's online right now.
+            Real-time status of the vanilla LEKKERBOYS SMP. See who's online right now.
         </p>
     </div>
 
     <!-- Status cards grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
         <!-- Main status card -->
-        <div class="glass-card p-8 md:col-span-2 hover:glass-card-hover group">
+        <div class="glass-card p-5 sm:p-8 md:col-span-2 hover:glass-card-hover group">
             {#if loading}
                 <div class="flex items-center gap-3">
                     <div
@@ -79,7 +84,7 @@
                 <div class="flex flex-col gap-6">
                     <!-- Online indicator + player count -->
                     <div
-                        class="flex items-start justify-between flex-wrap gap-4"
+                        class="flex flex-col sm:flex-row items-start justify-between gap-4"
                     >
                         <div class="flex items-center gap-4">
                             <div class="relative">
@@ -110,8 +115,8 @@
                         </div>
 
                         {#if serverData.online}
-                            <div class="flex flex-col items-end">
-                                <div class="text-4xl font-black text-green-300">
+                            <div class="flex flex-col items-start sm:items-end">
+                                <div class="text-3xl sm:text-4xl font-black text-green-300">
                                     {serverData.players.online}
                                     <span
                                         class="text-lg text-cream-muted/50 font-normal"
@@ -172,7 +177,7 @@
         <!-- Quick stats column -->
         <div class="flex flex-col gap-6">
             <!-- Server type card -->
-            <div class="glass-card p-6 hover:glass-card-hover">
+            <div class="glass-card p-5 sm:p-6 hover:glass-card-hover">
                 <div class="flex items-center gap-3 mb-3">
                     <div
                         class="w-10 h-10 rounded-lg bg-green-800/40 flex items-center justify-center"
@@ -206,7 +211,7 @@
             </div>
 
             <!-- Edition support card -->
-            <div class="glass-card p-6 hover:glass-card-hover">
+            <div class="glass-card p-5 sm:p-6 hover:glass-card-hover">
                 <div class="flex items-center gap-3 mb-3">
                     <div
                         class="w-10 h-10 rounded-lg bg-sky-400/20 flex items-center justify-center"
@@ -240,7 +245,7 @@
             </div>
 
             <!-- Whitelist card -->
-            <div class="glass-card p-6 hover:glass-card-hover">
+            <div class="glass-card p-5 sm:p-6 hover:glass-card-hover">
                 <div class="flex items-center gap-3 mb-3">
                     <div
                         class="w-10 h-10 rounded-lg bg-earth-400/20 flex items-center justify-center"

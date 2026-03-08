@@ -1,18 +1,18 @@
 <section id="dynmap" class="section-padding max-w-7xl mx-auto">
-    <div class="mb-10">
+    <div class="mb-8 sm:mb-10">
         <div class="pixel-label text-green-300 mb-3 flex items-center gap-2">
             <span class="inline-block w-2 h-2 bg-green-300 rotate-45"></span>
-            Live World Map
+            Vanilla World Map
         </div>
         <h2
-            class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4
+            class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4
                bg-gradient-to-br from-cream to-green-200 bg-clip-text text-transparent"
         >
-            Dynmap
+            Vanilla Dynmap
         </h2>
         <p class="text-lg text-cream-muted/80 max-w-xl">
-            Explore our world in real-time. See builds, terrain, and player
-            positions on the live map.
+            Explore the live vanilla world in real-time. See builds, terrain,
+            and player positions on the map.
         </p>
     </div>
 
@@ -25,7 +25,7 @@
             <div class="aspect-video w-full relative">
                 <iframe
                     src="http://mc.lekkerboys.co.za:8123"
-                    title="LEKKER Dynmap - Live World Map"
+                    title="LEKKERBOYS Vanilla Dynmap - Live World Map"
                     class="w-full h-full border-0 rounded-xl"
                     loading="lazy"
                     sandbox="allow-scripts allow-same-origin"
@@ -40,7 +40,7 @@
 
             <!-- Map controls bar -->
             <div
-                class="absolute bottom-0 left-0 right-0 p-4 flex items-center justify-between z-10"
+                class="absolute bottom-0 left-0 right-0 p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 z-10"
             >
                 <div class="flex items-center gap-2">
                     <div
@@ -52,7 +52,7 @@
                     href="http://mc.lekkerboys.co.za:8123"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex items-center gap-2 px-4 py-2 bg-green-600/40 hover:bg-green-500/50
+                    class="flex w-full sm:w-auto items-center justify-center gap-2 px-4 py-2 bg-green-600/40 hover:bg-green-500/50
                  text-green-200 text-sm font-medium rounded-lg transition-all duration-200
                  border border-green-600/30 hover:border-green-400/50
                  backdrop-blur-sm"

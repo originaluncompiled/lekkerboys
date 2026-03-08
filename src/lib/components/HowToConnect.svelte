@@ -25,26 +25,23 @@
 </script>
 
 <section id="connect" class="section-padding max-w-7xl mx-auto">
-    <div class="mb-10">
+    <div class="mb-8 sm:mb-10">
         <div class="pixel-label text-green-300 mb-3 flex items-center gap-2">
             <span class="inline-block w-2 h-2 bg-green-300 rotate-45"></span>
-            How To Connect
+            Cross-Platform Server
         </div>
         <h2
-            class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4
+            class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4
                bg-gradient-to-br from-cream to-green-200 bg-clip-text text-transparent"
         >
             Join the Server
         </h2>
-        <p class="text-lg text-cream-muted/80 max-w-xl">
-            Connect from Java or Bedrock Edition. Same world, same vibes.
-        </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         <!-- Java Edition Card -->
         <div
-            class="glass-card p-8 hover:glass-card-hover group relative overflow-hidden"
+            class="glass-card p-5 sm:p-8 hover:glass-card-hover group relative overflow-hidden"
         >
             <!-- Decorative corner -->
             <div
@@ -52,13 +49,13 @@
             ></div>
 
             <div class="relative">
-                <div class="flex items-center gap-4 mb-6">
+                <div class="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6">
                     <div
-                        class="w-14 h-14 rounded-xl bg-green-800/40 flex items-center justify-center
+                        class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-green-800/40 flex items-center justify-center
                       border border-green-700/30 group-hover:border-green-600/50 transition-colors"
                     >
                         <svg
-                            class="w-7 h-7 text-green-300"
+                            class="w-6 h-6 sm:w-7 sm:h-7 text-green-300"
                             viewBox="0 0 24 24"
                             fill="currentColor"
                         >
@@ -77,7 +74,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-cream">
+                        <h3 class="text-lg sm:text-xl font-bold text-cream">
                             Java Edition
                         </h3>
                         <p class="text-sm text-cream-muted/60">
@@ -88,13 +85,13 @@
 
                 <!-- Server IP -->
                 <div class="mb-6">
-                    <label
+                    <p
                         class="text-xs text-cream-muted/50 uppercase tracking-wider mb-2 block"
-                        >Server Address</label
+                        >Server Address</p
                     >
-                    <div class="flex items-center gap-2">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                         <div
-                            class="flex-1 bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-green-300 text-sm
+                            class="flex-1 bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-green-300 text-sm break-all
                         border border-green-700/20"
                         >
                             mc.lekkerboys.co.za
@@ -102,10 +99,10 @@
                         <button
                             onclick={() =>
                                 copyToClipboard("mc.lekkerboys.co.za", "java")}
-                            class="px-4 py-3 bg-green-600/30 hover:bg-green-500/40 rounded-lg
+                            class="w-full sm:w-auto px-4 py-3 bg-green-500/25 hover:bg-green-400/35 rounded-lg
                      text-green-300 text-sm font-medium transition-all duration-200
-                     border border-green-700/30 hover:border-green-500/50
-                     flex items-center gap-2 min-w-[90px] justify-center"
+                     border border-green-500/30 hover:border-green-400/50
+                     flex items-center gap-2 justify-center"
                         >
                             {#if copiedJava}
                                 <svg
@@ -179,20 +176,20 @@
 
         <!-- Bedrock Edition Card -->
         <div
-            class="glass-card p-8 hover:glass-card-hover group relative overflow-hidden"
+            class="glass-card p-5 sm:p-8 hover:glass-card-hover group relative overflow-hidden"
         >
             <div
                 class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-sky-400/10 to-transparent rounded-bl-3xl"
             ></div>
 
             <div class="relative">
-                <div class="flex items-center gap-4 mb-6">
+                <div class="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6">
                     <div
-                        class="w-14 h-14 rounded-xl bg-sky-500/20 flex items-center justify-center
+                        class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-sky-500/20 flex items-center justify-center
                       border border-sky-500/20 group-hover:border-sky-400/40 transition-colors"
                     >
                         <svg
-                            class="w-7 h-7 text-sky-300"
+                            class="w-6 h-6 sm:w-7 sm:h-7 text-sky-300"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -206,7 +203,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-cream">
+                        <h3 class="text-lg sm:text-xl font-bold text-cream">
                             Bedrock Edition
                         </h3>
                         <p class="text-sm text-cream-muted/60">
@@ -216,28 +213,34 @@
                 </div>
 
                 <!-- Server IP -->
-                <div class="mb-4">
-                    <label
+                <div class="mb-6">
+                    <p
                         class="text-xs text-cream-muted/50 uppercase tracking-wider mb-2 block"
-                        >Server Address</label
+                        >Server Address</p
                     >
-                    <div class="flex items-center gap-2">
+                    <div class="grid grid-cols-[minmax(0,1fr)_auto_auto] gap-2">
                         <div
-                            class="flex-1 bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-sky-300 text-sm
+                            class="bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-sky-300 text-sm break-all
                         border border-sky-500/20"
                         >
                             mc.lekkerboys.co.za
                         </div>
+                        <div
+                            class="bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-sky-300 text-sm
+                      border border-sky-500/20"
+                        >
+                            25565
+                        </div>
                         <button
                             onclick={() =>
                                 copyToClipboard(
-                                    "mc.lekkerboys.co.za",
+                                    "mc.lekkerboys.co.za:25565",
                                     "bedrock",
                                 )}
                             class="px-4 py-3 bg-sky-500/20 hover:bg-sky-500/30 rounded-lg
                      text-sky-300 text-sm font-medium transition-all duration-200
                      border border-sky-500/20 hover:border-sky-400/40
-                     flex items-center gap-2 min-w-[90px] justify-center"
+                     flex items-center gap-2 justify-center"
                         >
                             {#if copiedBedrock}
                                 <svg
@@ -271,20 +274,6 @@
                                 Copy
                             {/if}
                         </button>
-                    </div>
-                </div>
-
-                <!-- Port info -->
-                <div class="mb-6">
-                    <label
-                        class="text-xs text-cream-muted/50 uppercase tracking-wider mb-2 block"
-                        >Port</label
-                    >
-                    <div
-                        class="bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-sky-300 text-sm
-                      border border-sky-500/20 w-fit"
-                    >
-                        25565
                     </div>
                 </div>
 

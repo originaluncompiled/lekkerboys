@@ -1,123 +1,98 @@
-<footer class="border-t border-green-800/20 mt-20">
-    <div class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <!-- Brand -->
-            <div>
-                <div class="flex items-center gap-3 mb-4">
-                    <div
-                        class="w-8 h-8 bg-green-400 rounded-sm flex items-center justify-center
-                      shadow-[0_0_12px_rgba(92,180,60,0.3)]"
-                    >
-                        <span class="text-surface-primary font-black text-sm"
-                            >L</span
-                        >
-                    </div>
-                    <span
-                        class="font-pixel text-[0.7rem] text-cream tracking-wider"
-                        >LEKKER</span
-                    >
-                </div>
-                <p class="text-sm text-cream-muted/60 max-w-xs leading-relaxed">
-                    A private Minecraft SMP for the boys. Vanilla survival,
-                    cross-platform, pure vibes.
-                </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div>
-                <h4
-                    class="text-xs text-cream-muted/40 uppercase tracking-wider mb-4 font-semibold"
-                >
-                    Links
-                </h4>
-                <div class="flex flex-col gap-2">
-                    <a
-                        href="#home"
-                        class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
-                        >Home</a
-                    >
-                    <a
-                        href="#status"
-                        class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
-                        >Server Status</a
-                    >
-                    <a
-                        href="#dynmap"
-                        class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
-                        >Dynmap</a
-                    >
-                    <a
-                        href="https://panel.lekkerboys.co.za"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
-                        >Server Panel</a
-                    >
-                    <a
-                        href="https://discord.gg/your-invite"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
-                        >Discord</a
-                    >
-                </div>
-            </div>
-
-            <!-- Server Info -->
-            <div>
-                <h4
-                    class="text-xs text-cream-muted/40 uppercase tracking-wider mb-4 font-semibold"
-                >
-                    Server
-                </h4>
-                <div class="flex flex-col gap-3">
-                    <div>
-                        <p class="text-xs text-cream-muted/40 mb-1">
-                            Java Edition
-                        </p>
-                        <code class="text-sm text-green-300 font-mono"
-                            >mc.lekkerboys.co.za</code
-                        >
-                    </div>
-                    <div>
-                        <p class="text-xs text-cream-muted/40 mb-1">
-                            Bedrock Edition
-                        </p>
-                        <code class="text-sm text-sky-300 font-mono"
-                            >mc.lekkerboys.co.za:25565</code
-                        >
-                    </div>
-                </div>
-            </div>
+<footer class="border-t border-white/8 mt-10 sm:mt-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+    <div class="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,0.9fr)] gap-8 sm:gap-10 justify-items-center md:justify-items-stretch text-center md:text-left">
+      <!-- Brand -->
+      <div class="flex flex-col items-center md:items-start">
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+          <img
+            src="/images/lekkerlogo.png"
+            alt="LEKKERBOYS logo"
+            class="w-10 h-10 rounded-lg object-contain drop-shadow-[0_0_12px_rgba(92,180,60,0.3)]"
+          />
+          <span class="font-pixel text-[0.78rem] sm:text-[0.68rem] md:text-[0.72rem] lg:text-[0.78rem] text-cream tracking-wider"
+            >LEKKERBOYS</span
+          >
         </div>
+        <p class="text-sm text-cream-muted/60 max-w-xs leading-relaxed text-center md:text-left">
+          Two servers for the boys: the live cross-platform SMP and a modded
+          server that is coming soon.
+        </p>
+      </div>
 
-        <!-- Bottom bar -->
-        <div
-            class="mt-10 pt-6 border-t border-green-800/10 flex flex-col sm:flex-row items-center justify-between gap-4"
+      <!-- Links -->
+      <div class="w-fit flex flex-col items-center md:justify-self-start">
+        <h4
+          class="w-full text-center text-xs text-cream-muted/40 uppercase tracking-wider mb-2 font-semibold"
         >
-            <p class="text-xs text-cream-muted/30">
-                © {new Date().getFullYear()} LEKKER. Not affiliated with Mojang
-                Studios.
-            </p>
-            <div class="flex items-center gap-4">
-                <a
-                    href="https://discord.gg/your-invite"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-cream-muted/30 hover:text-green-300 transition-colors"
-                    aria-label="Discord"
-                >
-                    <svg
-                        class="w-4 h-4"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                    >
-                        <path
-                            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
-                        />
-                    </svg>
-                </a>
+          Links
+        </h4>
+        <div class="flex items-start gap-5 sm:gap-6 p-2">
+          <div>
+            <div class="flex flex-col items-center md:items-start gap-2">
+              <a
+                href="#home"
+                class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
+                >Home</a
+              >
+              <a
+                href="#servers"
+                class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
+                >Servers</a
+              >
+              <a
+                href="#connect"
+                class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
+                >Join Server</a
+              >
             </div>
+          </div>
+
+          <div>
+            <div class="flex flex-col items-center md:items-start gap-2">
+              <a
+                href="#status"
+                class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
+                >Vanilla Status</a
+              >
+              <a
+                href="#dynmap"
+                class="text-sm text-cream-muted/70 hover:text-green-300 transition-colors"
+                >Vanilla Dynmap</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Server Info -->
+      <div class="flex flex-col items-center md:items-start md:justify-self-end">
+        <h4
+          class="text-xs text-cream-muted/40 uppercase tracking-wider mb-4 font-semibold"
+        >
+          Server
+        </h4>
+        <div class="flex flex-col items-center md:items-start gap-3">
+          <div>
+            <p class="text-xs text-cream-muted/40 mb-1">Java Edition</p>
+            <code class="text-sm text-green-300 font-mono"
+              >mc.lekkerboys.co.za</code
+            >
+          </div>
+          <div>
+            <p class="text-xs text-cream-muted/40 mb-1">Bedrock Edition</p>
+            <code class="text-sm text-sky-300 font-mono"
+              >mc.lekkerboys.co.za:25565</code
+            >
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-8 pt-5 border-t border-white/8">
+      <p class="text-xs text-center text-cream-muted/30">
+        © {new Date().getFullYear()} LEKKERBOYS.
+      </p>
+    </div>
+  </div>
 </footer>
