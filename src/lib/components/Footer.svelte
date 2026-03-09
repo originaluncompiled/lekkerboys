@@ -4,20 +4,27 @@
 
 <footer class="border-t border-white/8 mt-10 sm:mt-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-    <div class="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,0.9fr)] gap-8 sm:gap-10 justify-items-center md:justify-items-stretch text-center md:text-left">
+    <div
+      class="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,0.9fr)] gap-8 sm:gap-10 justify-items-center md:justify-items-stretch text-center md:text-left"
+    >
       <!-- Brand -->
       <div class="flex flex-col items-center md:items-start">
-        <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+        <div
+          class="flex items-center justify-center md:justify-start gap-3 mb-4"
+        >
           <img
-            src={`${base}/images/lekkerlogo.png`}
+            src={`${base}/images/lekkerlogo.webp`}
             alt="LEKKERBOYS logo"
             class="w-10 h-10 rounded-lg object-contain drop-shadow-[0_0_12px_rgba(92,180,60,0.3)]"
           />
-          <span class="font-pixel text-[0.78rem] sm:text-[0.68rem] md:text-[0.72rem] lg:text-[0.78rem] text-cream tracking-wider"
+          <span
+            class="font-pixel text-[0.78rem] sm:text-[0.68rem] md:text-[0.72rem] lg:text-[0.78rem] text-cream tracking-wider"
             >LEKKERBOYS</span
           >
         </div>
-        <p class="text-sm text-cream-muted/60 max-w-xs leading-relaxed text-center md:text-left">
+        <p
+          class="text-sm text-cream-muted/60 max-w-xs leading-relaxed text-center md:text-left"
+        >
           Two servers for the boys: the live cross-platform SMP and a modded
           server that is coming soon.
         </p>
@@ -69,7 +76,9 @@
       </div>
 
       <!-- Server Info -->
-      <div class="flex flex-col items-center md:items-start md:justify-self-end">
+      <div
+        class="flex flex-col items-center md:items-start md:justify-self-end"
+      >
         <h4
           class="text-xs text-cream-muted/40 uppercase tracking-wider mb-4 font-semibold"
         >

@@ -34,7 +34,7 @@
 >
   <div class="absolute inset-0">
     <img
-      src={`${base}/images/hero-bg.png`}
+      src={`${base}/images/hero-bg.webp`}
       alt="LEKKERBOYS Minecraft Landscape"
       class="w-full h-full object-cover object-center"
     />
