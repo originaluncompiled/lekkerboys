@@ -20,10 +20,10 @@
 </script>
 
 <svelte:head>
-  <title>LEKKERBOYS — SMP Live, Modded Coming Soon</title>
+  <title>Lekkerboys</title>
   <meta
     name="description"
-    content="LEKKERBOYS runs a live cross-platform SMP now, with a modded server coming soon."
+    content="Lekkerboys runs a live cross-platform SMP now, with a modded server coming soon."
   />
 </svelte:head>
 

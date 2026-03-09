@@ -22,9 +22,9 @@
   >
     <div class="relative rounded-xl overflow-hidden bg-surface-primary">
       <!-- Map iframe -->
-      <div class="aspect-video w-full relative">
+      <div class="aspect-[32/45] sm:aspect-video w-full relative">
         <iframe
-          src="http://mc.lekkerboys.co.za:8123"
+          src="https://map.lekkerboys.co.za"
           title="LEKKERBOYS Vanilla Dynmap - Live World Map"
           class="w-full h-full border-0 rounded-xl"
           loading="lazy"
@@ -47,7 +47,7 @@
           <span class="text-xs text-cream-muted/80">Live</span>
         </div>
         <a
-          href="http://map.lekkerboys.co.za"
+          href="https://map.lekkerboys.co.za"
           target="_blank"
           rel="noopener noreferrer"
           class="flex w-full sm:w-auto items-center justify-center gap-2 px-4 py-2 bg-green-600/40 hover:bg-green-500/50

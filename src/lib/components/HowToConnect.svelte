@@ -218,7 +218,9 @@
                         class="text-xs text-cream-muted/50 uppercase tracking-wider mb-2 block"
                         >Server Address</p
                     >
-                    <div class="grid grid-cols-[minmax(0,1fr)_auto_auto] gap-2">
+                    <div
+                        class="grid grid-cols-1 gap-2 sm:grid-cols-[minmax(0,1fr)_auto_auto]"
+                    >
                         <div
                             class="bg-surface-primary/60 rounded-lg px-4 py-3 font-mono text-sky-300 text-sm break-all
                         border border-sky-500/20"
@@ -237,10 +239,10 @@
                                     "mc.lekkerboys.co.za:25565",
                                     "bedrock",
                                 )}
-                            class="px-4 py-3 bg-sky-500/20 hover:bg-sky-500/30 rounded-lg
+                            class="w-full px-4 py-3 bg-sky-500/20 hover:bg-sky-500/30 rounded-lg
                      text-sky-300 text-sm font-medium transition-all duration-200
                      border border-sky-500/20 hover:border-sky-400/40
-                     flex items-center gap-2 justify-center"
+                     flex items-center gap-2 justify-center sm:w-auto"
                         >
                             {#if copiedBedrock}
                                 <svg
